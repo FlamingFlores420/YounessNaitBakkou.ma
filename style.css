@@ -161,6 +161,7 @@ header ul li:hover ul li {
     height: 480px;
     margin: 10px;
     z-index: inherit;
+    transition: all 1s ease;
 }
 .card-img{
     background-color: aquamarine;
