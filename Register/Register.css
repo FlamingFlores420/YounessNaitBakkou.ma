@@ -1,0 +1,292 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('../../Images/5525115.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Topdiv{
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 101%;
+    height: 110px;
+    padding: 5px;
+    background-color: #bae8e8;
+    z-index: 1;
+}
+#Topdiv a img{
+    position: absolute;
+    left: 35%;
+    top:8%;
+    width:350px;
+    height: 100px;
+}
+nav{
+    border:none;
+    position: fixed;
+    width: 100vw;
+    height: 62px;
+    top: 105px;
+    left: -10px;
+    background-color: #142d4c;
+    z-index: 4;
+    padding-left: 100px;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../Projects/fonts/Montserrat-Light.ttf');
+}
+
+header ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Montserrat;
+}
+header ul li{
+    float: left;
+    background-color: #142d4c;
+    width:150px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+header ul li a:hover {
+   background-color: black;
+}
+header ul li ul li {
+    display: none;
+}
+header ul li:hover ul li {
+    display: block;
+}
+.registerbox{
+    width: 320px;
+    height: 570px;
+    color: #000;
+    background: #fff;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 15px;
+}
+.avatar{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: -37.5px;
+    left: calc(50% - 37.5px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.registerbox p{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    pointer-events: none;
+    top: -45px;
+    transition: 0.5s;
+    font-size: 16px;
+}
+.registerbox input:focus + p, .registerbox input:valid + p{
+    top:-70px;
+    font-size: 12px;
+} 
+.registerbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.registerbox input[type="text"], input[type="password"], input[type="tel"],input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+.registerbox span{
+    font-weight: bold;
+}
+.registerbox input[type="radio"]{
+    padding: 0px;
+    opacity: 0;
+    width: 0px;
+}
+.registerbox label{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    user-select: none;
+    width: 50px;
+    text-align: center;
+}
+.registerbox input[type="radio"]:checked + label {
+    background-color:#bfb;
+    border-color: #4c4;
+}
+.registerbox input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}
+label:hover {
+    background-color: #dfd;
+}
+.registerbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.registerbox input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #ffc107;
+    color: #000;
+}
+.registerbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+
+}
+.registerbox a:hover{
+    color: #ffc107 ;
+}
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+.container-footer ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+.footer-col{
+    width: 15%;
+    padding: 0 15px;
+}
+.soci{
+    width: 20%;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: inherit;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+
+}
+.footer-col .Social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 60px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+
+}
+.footer-col .Social a i{
+    margin-top: 30%;
+}
+.footer-col .Social a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width:100%;
+        
+    }
+}
+
+iframe{
+    position: absolute;
+    width: 20vw;
+    height: 180px;
+    top: 150px;
+    left: 70vw;
+}

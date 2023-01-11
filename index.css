@@ -1,0 +1,318 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+#Topdiv{
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 101%;
+    height: 100px;
+    padding: 5px;
+    background-color: #bae8e8;
+    z-index: 5;
+}
+#Topdiv a img{
+    position: absolute;
+    left: 35%;
+    top:8%;
+    width:350px;
+    height: 100px;
+}
+nav{
+    border:none;
+    position: fixed;
+    width: 100vw;
+    height: 62px;
+    top: 105px;
+    left: -10px;
+    background-color: #142d4c;
+    z-index: 3;
+    padding-left: 100px;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../Projects/fonts/Montserrat-Light.ttf');
+}
+
+header ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Montserrat;
+}
+header ul li{
+    float: left;
+    background-color: #142d4c;
+    width:150px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+header ul li a:hover {
+   background-color: black;
+}
+header ul li ul li {
+    display: none;
+}
+header ul li:hover ul li {
+    display: block;
+}
+
+
+.slideshow{
+    position: absolute; 
+    top:13%;
+    left:10%;
+    height: 80vh;
+    width: 80vw;
+    background-image:url('../Images/medicoffice.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: bottom;
+    z-index: -1;
+   
+}
+header{
+    position: fixed;
+}
+@keyframes slider{
+    0%{top: 0px;filter: brightness(50%);}
+    4%{top: -555px;filter: brightness(1);}
+    14.28%{top: -555px;filter: brightness(1);}
+    18.28%{top: -1110px;filter: brightness(50%);}
+    28.57%{top: -1110px;filter: brightness(1);}
+    29%{filter: brightness(50%);}
+    32.57%{top: -1665px;filter: brightness(1);}
+    42.85%{top: -1665px;filter: brightness(1);}
+    42.86%{filter: brightness(50%);}
+    46.85%{top: -2220px;filter: brightness(1);}
+    57.13%{top: -2220px;filter: brightness(1);}
+    57.14%{filter: brightness(50%);}
+    61.13%{top: -2775px;}
+    71.41%{top: -2775px;}
+    75.41%{top: -3330px;}
+    85.69%{top: -3330px;}
+    89.69%{top: -3885px;}
+    100%  {top: -3885px;}
+}
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 20.5%;
+    left: 0px;
+    border: none;
+    z-index: -1;
+    overflow: hidden;
+    padding: 0;
+    
+}
+.imgslider{
+    position: relative;
+    width: 99.6vw;
+    height: 555px;
+    animation: slider 180s ease-in-out  0s infinite normal forwards;
+    margin-bottom: -5px;
+    border: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 710px;
+    z-index: -2;
+    background-color: #142d4c;
+    height: 600px;
+    padding-top: 100px;
+}
+.container h1{
+    color: #142d4c;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    width: 250px;
+    height: auto;
+    background-color: #bae8e8;
+    text-align: center;
+    border-radius: 15px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.container:hover + h1{
+    width:850px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+}
+.card{
+    background:white;
+    border-radius: 15px;
+    width: 270px;
+    height: 480px;
+    margin: 10px;
+    z-index: inherit;
+}
+.card-img{
+    background-color: aquamarine;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    z-index: inherit;
+}
+
+.img1{
+    background-image:url('../Images/alexander.jpg') ;
+}
+.img2{
+    background-image:url('../Images/aziz.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3{
+    background-image:url('../Images/Jamie.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card h2{
+    padding: 10px;
+}
+.card p{
+    padding: 10px;
+}
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px 50px;
+    position: relative;
+    top: 0px;
+    border-radius: 10px;
+}
+.card:hover{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    position: absolute;
+    top: 178%;
+    width: 100%;
+}
+.footer-col{
+    width: 15%;
+    padding: 0 15px;
+}
+.soci{
+    width: 20%;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: inherit;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+
+}
+.footer-col .Social a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 60px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    
+}
+.footer-col .Social a:hover{
+    color: #24262b;
+    background-color: white;
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width:100%;
+        
+    }
+}
+
+iframe{
+    position: absolute;
+    width: 20vw;
+    height: 180px;
+    top: 150px;
+    left: 70vw;
+}
